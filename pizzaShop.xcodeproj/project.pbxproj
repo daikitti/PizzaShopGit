@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E03809529DA91970098CD87 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E03809429DA91970098CD87 /* StorageService.swift */; };
+		9E2E268729C83086000D4E6F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E268629C83086000D4E6F /* ProfileViewModel.swift */; };
+		9E3364CA29C40671003C8CBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E3364C929C40671003C8CBC /* GoogleService-Info.plist */; };
+		9E3364CD29C40B5C003C8CBC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9E3364CC29C40B5C003C8CBC /* FirebaseAuth */; };
+		9E3364CF29C40B5C003C8CBC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9E3364CE29C40B5C003C8CBC /* FirebaseFirestore */; };
+		9E3364D129C40B5C003C8CBC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9E3364D029C40B5C003C8CBC /* FirebaseStorage */; };
+		9E3364D329C41015003C8CBC /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3364D229C41015003C8CBC /* AuthService.swift */; };
+		9E3364D629C42A1D003C8CBC /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3364D529C42A1D003C8CBC /* MainTabBarViewModel.swift */; };
+		9E3CFD4529C4C72C00E3C13D /* MVUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CFD4429C4C72C00E3C13D /* MVUser.swift */; };
+		9E3CFD4729C4C85D00E3C13D /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CFD4629C4C85D00E3C13D /* DataBaseService.swift */; };
+		9E3EC67D29CDAF51008F697D /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3EC67C29CDAF51008F697D /* OrderCell.swift */; };
+		9E3EC67F29CE0733008F697D /* AdminOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3EC67E29CE0733008F697D /* AdminOrdersView.swift */; };
+		9E3EC68229CE0B27008F697D /* AdminOrdrsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3EC68129CE0B27008F697D /* AdminOrdrsViewModel.swift */; };
+		9E3EC68429CE0E65008F697D /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3EC68329CE0E65008F697D /* OrderView.swift */; };
+		9E3EC68629CE0E7E008F697D /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3EC68529CE0E7E008F697D /* OrderViewModel.swift */; };
+		9E58837129D16E020061AAFD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58837029D16E020061AAFD /* ImagePicker.swift */; };
+		9E58837329D173520061AAFD /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58837229D173520061AAFD /* AddProductView.swift */; };
+		9E6ABBE629BEA41F0006A844 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6ABBE529BEA41F0006A844 /* ProductDetailViewModel.swift */; };
+		9E90436A29BF06E3002C1130 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E90436929BF06E3002C1130 /* CartViewModel.swift */; };
+		9E90436C29BF073B002C1130 /* Position .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E90436B29BF073B002C1130 /* Position .swift */; };
+		9E90436E29BF0B04002C1130 /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E90436D29BF0B04002C1130 /* PositionCell.swift */; };
+		9E948F7B29B98F900003B403 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948F7A29B98F900003B403 /* MainTabBar.swift */; };
+		9E948F7D29B997EE0003B403 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948F7C29B997EE0003B403 /* CatalogView.swift */; };
+		9E948F8129B9986E0003B403 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948F8029B9986E0003B403 /* CartView.swift */; };
+		9E948F8329B9989A0003B403 /* ProfileIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E948F8229B9989A0003B403 /* ProfileIView.swift */; };
+		9E9C356D29BC1CF7007206EA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C356C29BC1CF7007206EA /* Product.swift */; };
+		9E9C356F29BC1E0E007206EA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C356E29BC1E0E007206EA /* ProductCell.swift */; };
+		9EB5FC8429B640B300AC29EF /* pizzaShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB5FC8329B640B300AC29EF /* pizzaShopApp.swift */; };
+		9EB5FC8629B640B300AC29EF /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB5FC8529B640B300AC29EF /* AuthView.swift */; };
+		9EB5FC8829B640B600AC29EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB5FC8729B640B600AC29EF /* Assets.xcassets */; };
+		9EB5FC8B29B640B600AC29EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB5FC8A29B640B600AC29EF /* Preview Assets.xcassets */; };
+		9EE4050929BE15A7004818C7 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4050829BE15A7004818C7 /* CatalogViewModel.swift */; };
+		9EE4050B29BE2545004818C7 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4050A29BE2545004818C7 /* ProductDetailView.swift */; };
+		9EFBC3E129CB2A9400E6D1EA /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBC3E029CB2A9400E6D1EA /* Order.swift */; };
+		9EFBC3E329CB33D000E6D1EA /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBC3E229CB33D000E6D1EA /* OrderStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E03809429DA91970098CD87 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		9E1E73DE29CB5D870071388B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E2E268629C83086000D4E6F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		9E3364C929C40671003C8CBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E3364D229C41015003C8CBC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9E3364D529C42A1D003C8CBC /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
+		9E3CFD4429C4C72C00E3C13D /* MVUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVUser.swift; sourceTree = "<group>"; };
+		9E3CFD4629C4C85D00E3C13D /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
+		9E3EC67C29CDAF51008F697D /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		9E3EC67E29CE0733008F697D /* AdminOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrdersView.swift; sourceTree = "<group>"; };
+		9E3EC68129CE0B27008F697D /* AdminOrdrsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrdrsViewModel.swift; sourceTree = "<group>"; };
+		9E3EC68329CE0E65008F697D /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		9E3EC68529CE0E7E008F697D /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		9E58837029D16E020061AAFD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9E58837229D173520061AAFD /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
+		9E6ABBE529BEA41F0006A844 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		9E90436929BF06E3002C1130 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		9E90436B29BF073B002C1130 /* Position .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Position .swift"; sourceTree = "<group>"; };
+		9E90436D29BF0B04002C1130 /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
+		9E948F7A29B98F900003B403 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		9E948F7C29B997EE0003B403 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		9E948F8029B9986E0003B403 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		9E948F8229B9989A0003B403 /* ProfileIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIView.swift; sourceTree = "<group>"; };
+		9E9C356C29BC1CF7007206EA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9E9C356E29BC1E0E007206EA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		9EB5FC8029B640B300AC29EF /* pizzaShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizzaShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB5FC8329B640B300AC29EF /* pizzaShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzaShopApp.swift; sourceTree = "<group>"; };
+		9EB5FC8529B640B300AC29EF /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		9EB5FC8729B640B600AC29EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EB5FC8A29B640B600AC29EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9EE4050829BE15A7004818C7 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		9EE4050A29BE2545004818C7 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		9EFBC3E029CB2A9400E6D1EA /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		9EFBC3E229CB33D000E6D1EA /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EB5FC7D29B640B300AC29EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3364CD29C40B5C003C8CBC /* FirebaseAuth in Frameworks */,
+				9E3364CF29C40B5C003C8CBC /* FirebaseFirestore in Frameworks */,
+				9E3364D129C40B5C003C8CBC /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E3364D429C4101F003C8CBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9E3364D229C41015003C8CBC /* AuthService.swift */,
+				9E3CFD4629C4C85D00E3C13D /* DataBaseService.swift */,
+				9E03809429DA91970098CD87 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9E3EC68029CE07EE008F697D /* AdminInterface */ = {
+			isa = PBXGroup;
+			children = (
+				9E3EC67E29CE0733008F697D /* AdminOrdersView.swift */,
+				9E3EC68329CE0E65008F697D /* OrderView.swift */,
+				9E58837229D173520061AAFD /* AddProductView.swift */,
+			);
+			path = AdminInterface;
+			sourceTree = "<group>";
+		};
+		9E90436F29BF0B1F002C1130 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9EE4050829BE15A7004818C7 /* CatalogViewModel.swift */,
+				9E6ABBE529BEA41F0006A844 /* ProductDetailViewModel.swift */,
+				9E90436929BF06E3002C1130 /* CartViewModel.swift */,
+				9E3364D529C42A1D003C8CBC /* MainTabBarViewModel.swift */,
+				9E2E268629C83086000D4E6F /* ProfileViewModel.swift */,
+				9E3EC68129CE0B27008F697D /* AdminOrdrsViewModel.swift */,
+				9E3EC68529CE0E7E008F697D /* OrderViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		9E9C356929BC1BD8007206EA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9E3EC68029CE07EE008F697D /* AdminInterface */,
+				9EB5FC8529B640B300AC29EF /* AuthView.swift */,
+				9E948F7A29B98F900003B403 /* MainTabBar.swift */,
+				9E948F7C29B997EE0003B403 /* CatalogView.swift */,
+				9EE4050A29BE2545004818C7 /* ProductDetailView.swift */,
+				9E948F8029B9986E0003B403 /* CartView.swift */,
+				9E948F8229B9989A0003B403 /* ProfileIView.swift */,
+				9E9C357029BC1E4D007206EA /* Components */,
+				9E90436F29BF0B1F002C1130 /* viewModel */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9E9C357029BC1E4D007206EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9E58837029D16E020061AAFD /* ImagePicker.swift */,
+				9E90436D29BF0B04002C1130 /* PositionCell.swift */,
+				9E9C356E29BC1E0E007206EA /* ProductCell.swift */,
+				9E3EC67C29CDAF51008F697D /* OrderCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9EB5FC7729B640B300AC29EF = {
+			isa = PBXGroup;
+			children = (
+				9EB5FC8229B640B300AC29EF /* pizzaShop */,
+				9EB5FC8129B640B300AC29EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EB5FC8129B640B300AC29EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB5FC8029B640B300AC29EF /* pizzaShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EB5FC8229B640B300AC29EF /* pizzaShop */ = {
+			isa = PBXGroup;
+			children = (
+				9E1E73DE29CB5D870071388B /* Info.plist */,
+				9EB5FC8329B640B300AC29EF /* pizzaShopApp.swift */,
+				9E3364D429C4101F003C8CBC /* Services */,
+				9EE4050529BE1539004818C7 /* Model */,
+				9E9C356929BC1BD8007206EA /* view */,
+				9EB5FC8729B640B600AC29EF /* Assets.xcassets */,
+				9E3364C929C40671003C8CBC /* GoogleService-Info.plist */,
+				9EB5FC8929B640B600AC29EF /* Preview Content */,
+			);
+			path = pizzaShop;
+			sourceTree = "<group>";
+		};
+		9EB5FC8929B640B600AC29EF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9EB5FC8A29B640B600AC29EF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9EE4050529BE1539004818C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E9C356C29BC1CF7007206EA /* Product.swift */,
+				9E90436B29BF073B002C1130 /* Position .swift */,
+				9E3CFD4429C4C72C00E3C13D /* MVUser.swift */,
+				9EFBC3E029CB2A9400E6D1EA /* Order.swift */,
+				9EFBC3E229CB33D000E6D1EA /* OrderStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB5FC7F29B640B300AC29EF /* pizzaShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB5FC8E29B640B600AC29EF /* Build configuration list for PBXNativeTarget "pizzaShop" */;
+			buildPhases = (
+				9EB5FC7C29B640B300AC29EF /* Sources */,
+				9EB5FC7D29B640B300AC29EF /* Frameworks */,
+				9EB5FC7E29B640B300AC29EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pizzaShop;
+			packageProductDependencies = (
+				9E3364CC29C40B5C003C8CBC /* FirebaseAuth */,
+				9E3364CE29C40B5C003C8CBC /* FirebaseFirestore */,
+				9E3364D029C40B5C003C8CBC /* FirebaseStorage */,
+			);
+			productName = pizzaShop;
+			productReference = 9EB5FC8029B640B300AC29EF /* pizzaShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EB5FC7829B640B300AC29EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9EB5FC7F29B640B300AC29EF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9EB5FC7B29B640B300AC29EF /* Build configuration list for PBXProject "pizzaShop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EB5FC7729B640B300AC29EF;
+			packageReferences = (
+				9E3364CB29C40B5C003C8CBC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 9EB5FC8129B640B300AC29EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB5FC7F29B640B300AC29EF /* pizzaShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EB5FC7E29B640B300AC29EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB5FC8B29B640B600AC29EF /* Preview Assets.xcassets in Resources */,
+				9EB5FC8829B640B600AC29EF /* Assets.xcassets in Resources */,
+				9E3364CA29C40671003C8CBC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EB5FC7C29B640B300AC29EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E948F8129B9986E0003B403 /* CartView.swift in Sources */,
+				9E2E268729C83086000D4E6F /* ProfileViewModel.swift in Sources */,
+				9EFBC3E129CB2A9400E6D1EA /* Order.swift in Sources */,
+				9E58837129D16E020061AAFD /* ImagePicker.swift in Sources */,
+				9E3EC68229CE0B27008F697D /* AdminOrdrsViewModel.swift in Sources */,
+				9E3364D629C42A1D003C8CBC /* MainTabBarViewModel.swift in Sources */,
+				9E3CFD4729C4C85D00E3C13D /* DataBaseService.swift in Sources */,
+				9EE4050B29BE2545004818C7 /* ProductDetailView.swift in Sources */,
+				9E948F7B29B98F900003B403 /* MainTabBar.swift in Sources */,
+				9EB5FC8629B640B300AC29EF /* AuthView.swift in Sources */,
+				9E3CFD4529C4C72C00E3C13D /* MVUser.swift in Sources */,
+				9EB5FC8429B640B300AC29EF /* pizzaShopApp.swift in Sources */,
+				9E6ABBE629BEA41F0006A844 /* ProductDetailViewModel.swift in Sources */,
+				9E3EC67F29CE0733008F697D /* AdminOrdersView.swift in Sources */,
+				9E90436E29BF0B04002C1130 /* PositionCell.swift in Sources */,
+				9E3EC67D29CDAF51008F697D /* OrderCell.swift in Sources */,
+				9E58837329D173520061AAFD /* AddProductView.swift in Sources */,
+				9E03809529DA91970098CD87 /* StorageService.swift in Sources */,
+				9EFBC3E329CB33D000E6D1EA /* OrderStatus.swift in Sources */,
+				9E948F8329B9989A0003B403 /* ProfileIView.swift in Sources */,
+				9E9C356F29BC1E0E007206EA /* ProductCell.swift in Sources */,
+				9E90436A29BF06E3002C1130 /* CartViewModel.swift in Sources */,
+				9E3EC68429CE0E65008F697D /* OrderView.swift in Sources */,
+				9E948F7D29B997EE0003B403 /* CatalogView.swift in Sources */,
+				9E90436C29BF073B002C1130 /* Position .swift in Sources */,
+				9E3364D329C41015003C8CBC /* AuthService.swift in Sources */,
+				9E3EC68629CE0E7E008F697D /* OrderViewModel.swift in Sources */,
+				9E9C356D29BC1CF7007206EA /* Product.swift in Sources */,
+				9EE4050929BE15A7004818C7 /* CatalogViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9EB5FC8C29B640B600AC29EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EB5FC8D29B640B600AC29EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EB5FC8F29B640B600AC29EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"pizzaShop/Preview Content\"";
+				DEVELOPMENT_TEAM = JC7MTK2ADS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pizzaShop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "люблю тебя зайка";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Разрешите использовать камеру ?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Разрешите открыть галерею для выбора фото ? ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitaziganshin.pizzaShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EB5FC9029B640B600AC29EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"pizzaShop/Preview Content\"";
+				DEVELOPMENT_TEAM = JC7MTK2ADS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pizzaShop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "люблю тебя зайка";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Разрешите использовать камеру ?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Разрешите открыть галерею для выбора фото ? ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitaziganshin.pizzaShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EB5FC7B29B640B300AC29EF /* Build configuration list for PBXProject "pizzaShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB5FC8C29B640B600AC29EF /* Debug */,
+				9EB5FC8D29B640B600AC29EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB5FC8E29B640B600AC29EF /* Build configuration list for PBXNativeTarget "pizzaShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB5FC8F29B640B600AC29EF /* Debug */,
+				9EB5FC9029B640B600AC29EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E3364CB29C40B5C003C8CBC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E3364CC29C40B5C003C8CBC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E3364CB29C40B5C003C8CBC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9E3364CE29C40B5C003C8CBC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E3364CB29C40B5C003C8CBC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9E3364D029C40B5C003C8CBC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E3364CB29C40B5C003C8CBC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9EB5FC7829B640B300AC29EF /* Project object */;
+}
